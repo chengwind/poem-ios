@@ -1,0 +1,63 @@
+//
+// Prefix header for all source files of the 'RDVTabBarController' target in the 'RDVTabBarController' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+#ifndef __OPTIMIZE__
+
+#define NSLog(...) NSLog(__VA_ARGS__)
+
+#else
+
+#define NSLog(...) {}
+
+#endif
+
+
+
+//系统版本号
+
+#ifndef IOS_VERSION
+
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+
+#endif
+
+
+//获取屏幕尺寸
+
+#ifndef IOS_BOUNDS
+
+#define IOS_BOUNDS [[UIScreen mainScreen] bounds]
+
+#endif
+
+
+//获取屏幕app尺寸，去掉状态栏
+
+#ifndef IOS_APPLICATIONFRAME
+
+#define IOS_APPLICATIONFRAME [[UIScreen mainScreen] applicationFrame]
+
+#endif
+
+
+//获取状态栏尺寸
+
+#ifndef IOS_STATUSBARFRAME
+
+#define IOS_STATUSBARFRAME [[UIApplication sharedApplication] statusBarFrame]
+
+#endif
+
+#define UMENG_APPKEY @"53edb9ebfd98c5cefd033c75"

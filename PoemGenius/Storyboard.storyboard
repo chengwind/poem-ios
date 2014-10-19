@@ -1,0 +1,1350 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="gNH-hV-dzn">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="KBQ-ww-Kw1">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="gNH-hV-dzn" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.80000000000000004" contentMode="scaleToFill" id="xoh-x4-bWx">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="P8v-eR-wB6" kind="relationship" relationship="viewControllers" id="euZ-9h-Ue3"/>
+                        <segue destination="dWP-fM-aUg" kind="relationship" relationship="viewControllers" id="Pkn-kP-nk1"/>
+                        <segue destination="Q2w-nE-ZOC" kind="relationship" relationship="viewControllers" id="53V-I1-6hP"/>
+                        <segue destination="4GU-J6-5IR" kind="relationship" relationship="viewControllers" id="wRv-eX-sYM"/>
+                        <segue destination="MhW-E5-LmN" kind="relationship" relationship="viewControllers" id="vVw-fe-zVs"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cCU-zf-DeO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1706" y="-516"/>
+        </scene>
+        <!--Navigation Controller - 更多-->
+        <scene sceneID="j9V-wm-lrI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MhW-E5-LmN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="更多" image="05" id="MH0-RF-h8n"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ntz-Fi-sij">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RWq-bp-SG7" kind="relationship" relationship="rootViewController" id="PtC-yj-72Y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8OW-iP-25H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1374" y="-1483"/>
+        </scene>
+        <!--More View Controller - 更多-->
+        <scene sceneID="uk7-Ej-M3f">
+            <objects>
+                <tableViewController id="RWq-bp-SG7" customClass="XYMoreViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="fLO-Dg-uhs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="6qy-Lj-MmA">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="PKe-c0-vAz" style="IBUITableViewCellStyleDefault" id="oPc-0J-gc8">
+                                        <rect key="frame" x="0.0" y="99" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oPc-0J-gc8" id="uti-9j-1ND">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="🌟 免责声明" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PKe-c0-vAz">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ZUy-4B-b6G" kind="push" id="OZO-XQ-oyi"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="y7K-AI-JiN" style="IBUITableViewCellStyleDefault" id="Igr-Uw-rjt">
+                                        <rect key="frame" x="0.0" y="143" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Igr-Uw-rjt" id="YLH-8l-WUJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="📝 使用介绍" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y7K-AI-JiN">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="FKQ-c3-nIo" kind="push" id="fwU-MP-EsM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="dwk-88-Cvg">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="CPC-ub-pHJ" detailTextLabel="nS6-S1-jHN" style="IBUITableViewCellStyleSubtitle" id="WqJ-Ab-kPK">
+                                        <rect key="frame" x="0.0" y="207" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WqJ-Ab-kPK" id="20r-am-yEB">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="⚡️ 软件更新" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CPC-ub-pHJ">
+                                                    <rect key="frame" x="15" y="6" width="91" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="        当前版本 : V0.01" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nS6-S1-jHN">
+                                                    <rect key="frame" x="15" y="26" width="100" height="12"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="ZJ8-92-WAY" style="IBUITableViewCellStyleDefault" id="Cj1-iY-T4N">
+                                        <rect key="frame" x="0.0" y="251" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cj1-iY-T4N" id="JQI-oN-KAS">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="👌 给个好评" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZJ8-92-WAY">
+                                                    <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="ese-zA-UaO" style="IBUITableViewCellStyleDefault" id="YgU-ts-Yrw">
+                                        <rect key="frame" x="0.0" y="295" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YgU-ts-Yrw" id="bWp-gP-sur">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="💬 意见建议" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ese-zA-UaO">
+                                                    <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="y8S-l9-ec5">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="anM-XP-TjI" style="IBUITableViewCellStyleDefault" id="68O-Oa-jHd">
+                                        <rect key="frame" x="0.0" y="359" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="68O-Oa-jHd" id="g9C-WH-OsS">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="👥 关于我们" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="anM-XP-TjI">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="8ga-7q-key" kind="push" id="n1N-Wf-Ug7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="RWq-bp-SG7" id="sR1-9J-O3M"/>
+                            <outlet property="delegate" destination="RWq-bp-SG7" id="UMk-rB-dip"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="更多" id="MC2-Rp-yrg"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ezc-hf-IoP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-918" y="-1717"/>
+        </scene>
+        <!--View Controller - 🌟 免责声明-->
+        <scene sceneID="TZM-36-ZFU">
+            <objects>
+                <viewController id="ZUy-4B-b6G" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lu8-fJ-27k"/>
+                        <viewControllerLayoutGuide type="bottom" id="f8T-Sj-Vlb"/>
+                    </layoutGuides>
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="Cpd-zL-abm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlt-Z0-MyS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="      &quot;">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="无忧诗词">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="&quot;">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="由小瑶软件工作室开发并拥有版权，您在使用本软件表示您已同意使用本协议相关内容。">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+1.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="本软件的一切版权如知识产权，以及与软件相关的所有信息内容，包括：文字表述及其组合、图标、图饰、图表、色彩、界面设计、版面框架、有关数据、印刷材料、或电子文档等均受著作权法和国际著作权条约以及其他知识产权法律法规的保护。">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+2. </string>
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="不得对本软件进行反向工程、反向汇编、反向编译等修改行为。">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+3. </string>
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="不得利用本软件发表、传送、传播、储存违反国家法律、危害国家安全、祖国统一、社会稳定的内容，或任何不当的、侮辱诽谤的、淫秽的、暴力的及任何违反国家法律法规政策的内容。">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+4. </string>
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="用户在使用软件时因网络、系统不稳定性及其他各种不可抗力原因而遭受的经济损失，小瑶软件工作室不承担任何责任。">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+5. </string>
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="用户不得自行修改本软件的相关配置文件，否则造成的后果由用户自行承担。">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+6. </string>
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="本软件所用部分内容来源于各相关媒体或者网络，内容仅供参阅，与小瑶软件工作室立场无关。如有不符合事实，或影响到您利益的文章，请及时告知，我们将及时处理">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=", ">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="谢谢监督。">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nlt-Z0-MyS" firstAttribute="top" secondItem="lu8-fJ-27k" secondAttribute="bottom" constant="-64" id="WEl-cL-8td"/>
+                            <constraint firstAttribute="trailing" secondItem="nlt-Z0-MyS" secondAttribute="trailing" id="g1y-aY-Q3u"/>
+                            <constraint firstItem="f8T-Sj-Vlb" firstAttribute="top" secondItem="nlt-Z0-MyS" secondAttribute="bottom" constant="-49" id="nbS-RV-kSV"/>
+                            <constraint firstItem="nlt-Z0-MyS" firstAttribute="leading" secondItem="Cpd-zL-abm" secondAttribute="leading" id="qPG-LQ-ZcB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="🌟 免责声明" id="OPe-qQ-mIZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UZc-zh-ik8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-483" y="-1953"/>
+        </scene>
+        <!--View Controller - 📝 使用介绍-->
+        <scene sceneID="XQL-LP-ea6">
+            <objects>
+                <viewController id="FKQ-c3-nIo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EBG-pF-9Yt"/>
+                        <viewControllerLayoutGuide type="bottom" id="4cc-hg-e0x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FvK-ck-FaL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMR-9P-Vu3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="&quot;">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="无忧诗词">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="&quot;">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="使用介绍。">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+1.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="共收集了">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="488459">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="GillSans-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="首各朝代诗词">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="(">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="比如其中有唐诗">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="46275">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="GillSans-Bold"/>
+                                            <font key="NSOriginalFont" size="22" name="GillSans-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="首，宋词">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="203896">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="GillSans-Bold"/>
+                                            <font key="NSOriginalFont" size="22" name="GillSans-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="首等），最全的诗词曲大全，没有之一，一朝拥有，别无所求。">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+2.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="所有的诗词信息都是离线的，不用联网就可以随心所欲的查看所喜欢的诗词。">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+3.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="提供唐诗">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=",">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="宋词，元曲，名句等内容，多数诗词带有题注，详细解释，字词解释，角注等信息。">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+4.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="提供按朝代（">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="14">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="GillSans-Bold"/>
+                                            <font key="NSOriginalFont" size="22" name="GillSans-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="个不同朝代">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=")">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="分类，">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="按常用分类">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="(">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="共">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="61">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="GillSans-Bold"/>
+                                            <font key="NSOriginalFont" size="22" name="GillSans-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="类），按体裁分类（">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="18">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="GillSans-Bold"/>
+                                            <font key="NSOriginalFont" size="22" name="GillSans-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="种体戴">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=")">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="，按韵部分类">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="(">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="106">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="GillSans-Bold"/>
+                                            <font key="NSOriginalFont" size="22" name="GillSans-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="种韵部），各种不同分类方法一应俱全，最大程度满足不同用户需要。">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+5.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="有诗人列表及通过朝代检索诗人的功能">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+6.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="丰富的查询功能，可通过标题，诗人，内容，注释不同信息内容进行查询，最快速方便的定位到需要的诗词。">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+7.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="阅读诗词支持左右滑动翻页功能。">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+8.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="支持分享诗词内容或诗人到新浪微博，腾讯微博，微信，">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="QZone">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="，">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="SMS">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="，电子邮件分享等。">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+9.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="可以收藏自己喜欢的诗词或诗人，方便以后快速查找和阅读。">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+CgoKA
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="注：尽管程序经过精心的优化，但因数据量较大，所以对手机配置有较高的要求，配置较低的">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="iPhone">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="，">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="iPad">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name=".LucidaGrandeUI"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="等机器在使用搜索等功能时可能会较慢。">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oMR-9P-Vu3" firstAttribute="leading" secondItem="FvK-ck-FaL" secondAttribute="leading" id="9XW-qK-4sl"/>
+                            <constraint firstAttribute="trailing" secondItem="oMR-9P-Vu3" secondAttribute="trailing" id="Oll-G2-gzm"/>
+                            <constraint firstItem="oMR-9P-Vu3" firstAttribute="top" secondItem="FvK-ck-FaL" secondAttribute="top" id="cmr-7L-LLz"/>
+                            <constraint firstAttribute="bottom" secondItem="oMR-9P-Vu3" secondAttribute="bottom" id="yfi-1H-AOE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="📝 使用介绍" id="4tS-3z-ESZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nhB-xg-R2h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="-1692"/>
+        </scene>
+        <!--View Controller - 👥 关于我们-->
+        <scene sceneID="Nwn-5O-2IE">
+            <objects>
+                <viewController id="8ga-7q-key" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Kk-Qs-a85"/>
+                        <viewControllerLayoutGuide type="bottom" id="m0U-Ly-QCu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fKs-Ge-wME">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="05" translatesAutoresizingMaskIntoConstraints="NO" id="vqm-Fm-GCo">
+                                <rect key="frame" x="127" y="117" width="66" height="53"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="BTN-zs-9Z8"/>
+                                    <constraint firstAttribute="height" constant="53" id="ZOo-IQ-yBb"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wL9-9S-WER">
+                                <rect key="frame" x="82" y="206" width="156" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="作者: Jason Hong">
+                                        <attributes>
+                                            <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p6X-yk-LVh">
+                                <rect key="frame" x="82" y="254" width="156" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZRu-zg-jGM"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="2014年8月">
+                                        <attributes>
+                                            <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p6X-yk-LVh" firstAttribute="trailing" secondItem="wL9-9S-WER" secondAttribute="trailing" id="1Jv-8v-92e"/>
+                            <constraint firstItem="m0U-Ly-QCu" firstAttribute="top" secondItem="p6X-yk-LVh" secondAttribute="bottom" constant="147" id="5CS-aB-b2a"/>
+                            <constraint firstAttribute="centerX" secondItem="vqm-Fm-GCo" secondAttribute="centerX" id="TWw-Pz-5K6"/>
+                            <constraint firstItem="wL9-9S-WER" firstAttribute="top" secondItem="vqm-Fm-GCo" secondAttribute="bottom" constant="36" id="elS-CP-9m4"/>
+                            <constraint firstItem="p6X-yk-LVh" firstAttribute="leading" secondItem="fKs-Ge-wME" secondAttribute="leading" constant="82" id="kCw-3X-jla"/>
+                            <constraint firstAttribute="centerX" secondItem="wL9-9S-WER" secondAttribute="centerX" id="r5e-n9-jDN"/>
+                            <constraint firstItem="p6X-yk-LVh" firstAttribute="leading" secondItem="wL9-9S-WER" secondAttribute="leading" id="sfE-I8-Mmm"/>
+                            <constraint firstItem="p6X-yk-LVh" firstAttribute="top" secondItem="wL9-9S-WER" secondAttribute="bottom" constant="18" id="skx-si-4Ww"/>
+                            <constraint firstItem="vqm-Fm-GCo" firstAttribute="top" secondItem="1Kk-Qs-a85" secondAttribute="bottom" constant="53" id="vf2-EL-YFh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="👥 关于我们" id="FHd-hb-nB6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1dL-3p-Mo9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-475" y="-1185"/>
+        </scene>
+        <!--Navigation Controller - 分类-->
+        <scene sceneID="6Me-m8-D9r">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P8v-eR-wB6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="分类" image="01" id="R2O-FM-xL5"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Scx-Ek-sPA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="M9u-RD-SCT" kind="relationship" relationship="rootViewController" id="TFy-fu-EpN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p3X-CO-6JD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="518" y="-1046"/>
+        </scene>
+        <!--Category View Controller-->
+        <scene sceneID="8vd-K5-7OL">
+            <objects>
+                <tableViewController id="M9u-RD-SCT" customClass="XYCategoryViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="TJy-sm-NEh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CategoryCell" id="nqw-iQ-rs9">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nqw-iQ-rs9" id="ia6-eP-tXE">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="M9u-RD-SCT" id="D4l-5R-NNK"/>
+                            <outlet property="delegate" destination="M9u-RD-SCT" id="idH-1D-6sN"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Poj-Nj-IwN"/>
+                    <connections>
+                        <segue destination="XuQ-H7-MLa" kind="push" identifier="showPoemListSegue" id="02W-cB-yhe"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zf8-0a-Shy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1029" y="-1179"/>
+        </scene>
+        <!--Poem List View Controller-->
+        <scene sceneID="fOa-gO-Rd9">
+            <objects>
+                <tableViewController id="XuQ-H7-MLa" customClass="XYPoemListViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="CSr-Ra-huY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PoemListCell" id="iCd-UZ-aHv">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iCd-UZ-aHv" id="Z1G-ku-ngX">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="XuQ-H7-MLa" id="zci-4k-JIb"/>
+                            <outlet property="delegate" destination="XuQ-H7-MLa" id="nMk-6Q-vxI"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="ILh-uu-Xt4"/>
+                    <connections>
+                        <segue destination="mZr-Hz-lDw" kind="push" identifier="showPoemSegue" id="W2U-OT-Uye"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IOg-AK-wdJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1435" y="-483"/>
+        </scene>
+        <!--Authors View Controller-->
+        <scene sceneID="gRg-8e-fxQ">
+            <objects>
+                <tableViewController id="Cnb-iz-qBe" customClass="XYAuthorsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="cFh-IZ-ZEU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="id1" id="3Wu-f6-0Pe">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Wu-f6-0Pe" id="HGN-QE-EN4">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Cnb-iz-qBe" id="btQ-nI-k9z"/>
+                            <outlet property="delegate" destination="Cnb-iz-qBe" id="4PD-pw-RJe"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="G14-Tb-WCR"/>
+                    <connections>
+                        <segue destination="OyR-1W-Q5R" kind="push" identifier="showAuthorSegue" id="D1f-Bb-F00"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o8e-uC-fia" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1479" y="540"/>
+        </scene>
+        <!--Author View Controller-->
+        <scene sceneID="Dea-Eq-Yor">
+            <objects>
+                <viewController id="OyR-1W-Q5R" customClass="XYAuthorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A7Q-RG-Uau"/>
+                        <viewControllerLayoutGuide type="bottom" id="BaB-Xj-DVB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4BZ-xh-y7o">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wb6-OD-m40">
+                                <rect key="frame" x="0.0" y="2" width="320" height="481"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Author - 央广网北京6月6日消息 据中国之声《新闻纵横》报道，明天，2014年高考就要正式拉开大幕了。根据教育部统计，今年全国高考报名人数939万，是连续5年下降后的首次回升，当然，幅度很小，只比去年增长了27万，小涨3%。
+
+2008年我国高考报名人数达到历史峰值的1050万，从此之后，人数迅速下滑。根据中国教育在线刚刚发布的《2014年高招教育报告》，高考生源的下降，主要是适龄学生人口的持续下降，而这个趋势将一直延续到2020年。
+
+中国教育在线总编辑陈志文：整个生源的变化其实是和各地本身的人口出生率相关的，落户政策的影响是相对小的。举个最简单的例子，我们2000年的时候全国的出生率大概只出生了一千两百万人左右。在各地也有这种节奏，只是最低谷出现的时间不一样。
+
+这种减少，反映在各地是这样的：北京今年比去年减少2000人，连续第八年下降；上海更明显，2006年还11万人，今年只有5万2，缩减一半；高考大省河南，今年甩掉考生第一大省帽子，72.4万人，连续第五年下降。
+
+报的人少了，招的人也在减少，于是各地都开始调减招生计划。陈志文说，这几年，最严重的问题是——就算减了也招不满。
+
+陈志文：这个在以前是没有的。我们以前，各地为了多招两个学生，实际上或多或少是超额完成招生计划了。现在就变成完不成招生计划了。等于有条件上大学的这些学生都放弃上，这才是真正的危机。因为学生和家长放弃了上大学的机会。
+
+这种“招不满”的生源危机，反映到不同的学校，呈现不同的化学效果。影响小的，面临的只是一场生源危机，严重的恐怕要演变成生存危机了。这种危机正在倒逼高校，尤其是二本、三本院校的改革。中国教育科学研究院研究员储朝晖说：
+
+储朝晖：整体的，各个高校都要进行观念的转变。就是要从过去的高高在上，等着学生来上门，转为真正的以学生为本，以学生的需要作为办学的依据。然后根据这个依据来进行实际教学。对学校的管理，进行管理体制改革。把学校办成真正为学生成长发展服务，为学生实现自己的人生使命服务。只有实现了这一点，大学才能在未来的竞争中生存下来。
+
+教育部也在积极引导一批高校向应用技术型转型。目前，全国已经有150多所地方院校报名参加教育部的转型改革，淡化学科、强化专业，按照企业的需要，按照岗位对接。不过，中国教育在线总编辑陈志文也担心，这种改革会因社会和家长的顾虑而缺乏动力。
+
+陈志文：这些学校都是缺乏特色和不接地气。我觉得这个政策是高等教育领域出台的最好的一个政策。但是一些高校有没有动力？因为一但是被定为实际应用类，就会觉得他是本科的职业学校。就会有看法，也会导致很多学校不想，不敢走这条路。
+
+根据预测，2020年，我国18岁适龄人口将达到最低谷。这意味着，曾经千军万马过独木桥的壮烈场景将不复存在。面对成为大趋势的生源危机，未来6年，不知有多少高校能化“危机”为“转机”？当然也让人很想知道，6年后的高考，会变成什么样子。未来还充满不确定性。
+
+(原标题：高考生源下降趋势将延续至2020年 各地调减招生计划)</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fm3-gB-CcQ">
+                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="aG3-bz-fhd"/>
+                                    <barButtonItem systemItem="bookmarks" id="dnU-Q6-Fg4"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="btX-fr-0Lu"/>
+                                    <barButtonItem systemItem="organize" id="93j-4M-VeE">
+                                        <connections>
+                                            <action selector="buttonAction:" destination="OyR-1W-Q5R" id="Y9g-QV-4es"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Pc1-JN-JjB"/>
+                                    <barButtonItem systemItem="action" id="crJ-o4-Oae"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="UUo-eD-UGI"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fm3-gB-CcQ" firstAttribute="leading" secondItem="wb6-OD-m40" secondAttribute="leading" id="43I-iX-WR7"/>
+                            <constraint firstItem="Fm3-gB-CcQ" firstAttribute="leading" secondItem="4BZ-xh-y7o" secondAttribute="leading" id="IWg-uH-dYn"/>
+                            <constraint firstItem="wb6-OD-m40" firstAttribute="top" secondItem="4BZ-xh-y7o" secondAttribute="top" constant="2" id="JQm-gy-XZf"/>
+                            <constraint firstAttribute="bottom" secondItem="Fm3-gB-CcQ" secondAttribute="bottom" id="SBc-0z-joz"/>
+                            <constraint firstAttribute="trailing" secondItem="Fm3-gB-CcQ" secondAttribute="trailing" id="hKs-SR-5J9"/>
+                            <constraint firstItem="Fm3-gB-CcQ" firstAttribute="trailing" secondItem="wb6-OD-m40" secondAttribute="trailing" id="lXm-3U-gBn"/>
+                            <constraint firstItem="Fm3-gB-CcQ" firstAttribute="top" secondItem="wb6-OD-m40" secondAttribute="bottom" constant="-47" id="oKP-SK-kNH"/>
+                        </constraints>
+                        <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                        <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="D01-zW-DCb"/>
+                    <connections>
+                        <outlet property="btnFav" destination="dnU-Q6-Fg4" id="4Zf-p5-ArO"/>
+                        <outlet property="btnSetting" destination="93j-4M-VeE" id="7Tf-8p-aTl"/>
+                        <outlet property="btnShare" destination="crJ-o4-Oae" id="Eef-Ci-7gd"/>
+                        <outlet property="tvContent" destination="wb6-OD-m40" id="XVC-dE-4os"/>
+                        <outlet property="uiToolbar" destination="Fm3-gB-CcQ" id="ReR-2z-WmN"/>
+                        <segue destination="XuQ-H7-MLa" kind="push" identifier="showPoemListSegue" id="jKb-OP-LP7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A4C-aJ-M7R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2101" y="81"/>
+        </scene>
+        <!--Poem View Controller-->
+        <scene sceneID="WUh-Xy-Io4">
+            <objects>
+                <viewController id="mZr-Hz-lDw" customClass="XYPoemViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gcR-jO-3fT"/>
+                        <viewControllerLayoutGuide type="bottom" id="DKn-5u-ofI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wyn-IR-CbS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60r-4i-qUM">
+                                <rect key="frame" x="0.0" y="2" width="320" height="481"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">POEM - 央广网北京6月6日消息 据中国之声《新闻纵横》报道，明天，2014年高考就要正式拉开大幕了。根据教育部统计，今年全国高考报名人数939万，是连续5年下降后的首次回升，当然，幅度很小，只比去年增长了27万，小涨3%。
+
+2008年我国高考报名人数达到历史峰值的1050万，从此之后，人数迅速下滑。根据中国教育在线刚刚发布的《2014年高招教育报告》，高考生源的下降，主要是适龄学生人口的持续下降，而这个趋势将一直延续到2020年。
+
+中国教育在线总编辑陈志文：整个生源的变化其实是和各地本身的人口出生率相关的，落户政策的影响是相对小的。举个最简单的例子，我们2000年的时候全国的出生率大概只出生了一千两百万人左右。在各地也有这种节奏，只是最低谷出现的时间不一样。
+
+这种减少，反映在各地是这样的：北京今年比去年减少2000人，连续第八年下降；上海更明显，2006年还11万人，今年只有5万2，缩减一半；高考大省河南，今年甩掉考生第一大省帽子，72.4万人，连续第五年下降。
+
+报的人少了，招的人也在减少，于是各地都开始调减招生计划。陈志文说，这几年，最严重的问题是——就算减了也招不满。
+
+陈志文：这个在以前是没有的。我们以前，各地为了多招两个学生，实际上或多或少是超额完成招生计划了。现在就变成完不成招生计划了。等于有条件上大学的这些学生都放弃上，这才是真正的危机。因为学生和家长放弃了上大学的机会。
+
+这种“招不满”的生源危机，反映到不同的学校，呈现不同的化学效果。影响小的，面临的只是一场生源危机，严重的恐怕要演变成生存危机了。这种危机正在倒逼高校，尤其是二本、三本院校的改革。中国教育科学研究院研究员储朝晖说：
+
+储朝晖：整体的，各个高校都要进行观念的转变。就是要从过去的高高在上，等着学生来上门，转为真正的以学生为本，以学生的需要作为办学的依据。然后根据这个依据来进行实际教学。对学校的管理，进行管理体制改革。把学校办成真正为学生成长发展服务，为学生实现自己的人生使命服务。只有实现了这一点，大学才能在未来的竞争中生存下来。
+
+教育部也在积极引导一批高校向应用技术型转型。目前，全国已经有150多所地方院校报名参加教育部的转型改革，淡化学科、强化专业，按照企业的需要，按照岗位对接。不过，中国教育在线总编辑陈志文也担心，这种改革会因社会和家长的顾虑而缺乏动力。
+
+陈志文：这些学校都是缺乏特色和不接地气。我觉得这个政策是高等教育领域出台的最好的一个政策。但是一些高校有没有动力？因为一但是被定为实际应用类，就会觉得他是本科的职业学校。就会有看法，也会导致很多学校不想，不敢走这条路。
+
+根据预测，2020年，我国18岁适龄人口将达到最低谷。这意味着，曾经千军万马过独木桥的壮烈场景将不复存在。面对成为大趋势的生源危机，未来6年，不知有多少高校能化“危机”为“转机”？当然也让人很想知道，6年后的高考，会变成什么样子。未来还充满不确定性。
+
+(原标题：高考生源下降趋势将延续至2020年 各地调减招生计划)</string>
+                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hL-d4-Txp">
+                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <barButtonItem image="Arrow Left.png" id="Dji-gT-bML"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ucP-pt-jb3"/>
+                                    <barButtonItem systemItem="bookmarks" id="0mC-4P-yRi"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="PWT-XW-sd6"/>
+                                    <barButtonItem systemItem="organize" id="UX3-M1-RgK">
+                                        <connections>
+                                            <action selector="buttonAction:" destination="mZr-Hz-lDw" id="qBZ-PB-dfS"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="OJ7-Kv-ykb"/>
+                                    <barButtonItem systemItem="action" id="cCH-2h-kPY"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="drI-6Y-biO"/>
+                                    <barButtonItem image="Arrow Right.png" id="mcY-kY-GdT"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="1hL-d4-Txp" firstAttribute="top" secondItem="60r-4i-qUM" secondAttribute="bottom" constant="-47" id="3gU-WS-Z6x"/>
+                            <constraint firstAttribute="bottom" secondItem="1hL-d4-Txp" secondAttribute="bottom" id="3vc-iL-V0p"/>
+                            <constraint firstAttribute="trailing" secondItem="1hL-d4-Txp" secondAttribute="trailing" id="9bZ-jm-kRm"/>
+                            <constraint firstItem="60r-4i-qUM" firstAttribute="top" secondItem="wyn-IR-CbS" secondAttribute="top" constant="2" id="9ya-gw-dL2"/>
+                            <constraint firstItem="1hL-d4-Txp" firstAttribute="leading" secondItem="60r-4i-qUM" secondAttribute="leading" id="MH3-gW-jhv"/>
+                            <constraint firstItem="1hL-d4-Txp" firstAttribute="trailing" secondItem="60r-4i-qUM" secondAttribute="trailing" id="SAg-oH-Pbc"/>
+                            <constraint firstItem="60r-4i-qUM" firstAttribute="leading" secondItem="wyn-IR-CbS" secondAttribute="leading" id="c2U-OE-rhV"/>
+                        </constraints>
+                        <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                        <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="37d-TD-6lL"/>
+                    <connections>
+                        <outlet property="btnFav" destination="0mC-4P-yRi" id="Qky-bv-OMb"/>
+                        <outlet property="btnNext" destination="mcY-kY-GdT" id="t2C-PS-QG5"/>
+                        <outlet property="btnPrevious" destination="Dji-gT-bML" id="CK8-82-EY8"/>
+                        <outlet property="btnSetting" destination="UX3-M1-RgK" id="fb1-pf-deq"/>
+                        <outlet property="btnShare" destination="cCH-2h-kPY" id="uZ7-as-sFj"/>
+                        <outlet property="tvContent" destination="60r-4i-qUM" id="cro-bt-YZB"/>
+                        <outlet property="uiToolbar" destination="1hL-d4-Txp" id="FH6-7V-bBb"/>
+                        <segue destination="OyR-1W-Q5R" kind="push" identifier="showAuthorSegue" id="AR8-7b-fpV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NEW-dS-ta8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2240" y="-1199"/>
+        </scene>
+        <!--Navigation Controller - 查询-->
+        <scene sceneID="0yT-ok-VDl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q2w-nE-ZOC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="查询" image="03" id="dtH-s9-Zjv"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="boX-ud-Wc9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SC5-HC-B2z" kind="relationship" relationship="rootViewController" id="5Dw-wb-nmf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uXn-2m-fE7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-150" y="-394"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="rNe-Sw-nvA">
+            <objects>
+                <tableViewController id="SC5-HC-B2z" customClass="XYSearchViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="gV3-ym-CCS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="SC5-HC-B2z" id="kDd-Sn-3jX"/>
+                            <outlet property="delegate" destination="SC5-HC-B2z" id="Vp7-Y0-Cwh"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="mb2-d9-AW1"/>
+                    <connections>
+                        <segue destination="mZr-Hz-lDw" kind="push" identifier="showPoemSegue" id="RLm-Ip-O7j"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f2t-ux-4HH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="421" y="-383"/>
+        </scene>
+        <!--Navigation Controller - 诗人-->
+        <scene sceneID="SmD-aq-vCH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dWP-fM-aUg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="诗人" image="02" id="DLq-25-QOm"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GzV-kN-NKZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fZb-o4-eIy" kind="relationship" relationship="rootViewController" id="FQL-as-l5k"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JQ7-Na-QEV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="917" y="702"/>
+        </scene>
+        <!--Author List View Controller-->
+        <scene sceneID="iXn-VG-2Nr">
+            <objects>
+                <tableViewController id="fZb-o4-eIy" customClass="XYAuthorListViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Kcd-NY-5DP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AuthorCell" id="ciX-pW-4l1">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ciX-pW-4l1" id="2gO-R7-HQd">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fZb-o4-eIy" id="4pS-AX-J9A"/>
+                            <outlet property="delegate" destination="fZb-o4-eIy" id="jLN-27-Jmb"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="wRq-w0-wgc"/>
+                    <connections>
+                        <segue destination="OyR-1W-Q5R" kind="push" identifier="showAuthorSegue" id="FLR-xV-N2g"/>
+                        <segue destination="Cnb-iz-qBe" kind="push" identifier="showAuthorsSegue" id="f0A-eo-nVx"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Uj-7z-UgB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="997" y="-30"/>
+        </scene>
+        <!--Navigation Controller - 收藏-->
+        <scene sceneID="TF7-j0-tyz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4GU-J6-5IR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="收藏" image="04" id="nJH-Qi-Z9A"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KtW-lW-P4V">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="or7-5C-64w" kind="relationship" relationship="rootViewController" id="cOv-x2-gHf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bbG-Xc-RLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-309" y="664"/>
+        </scene>
+        <!--Fav View Controller-->
+        <scene sceneID="8SS-YS-xT0">
+            <objects>
+                <tableViewController id="or7-5C-64w" customClass="XYFavViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="b1z-Xv-IRO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FavCell" id="ZK3-Hk-QGi">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZK3-Hk-QGi" id="rNY-jl-wrc">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="or7-5C-64w" id="jRe-OP-hFp"/>
+                            <outlet property="delegate" destination="or7-5C-64w" id="mis-8E-Ywk"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="UXm-8d-kXD"/>
+                    <connections>
+                        <segue destination="OyR-1W-Q5R" kind="push" identifier="showAuthorSegue" id="Dx4-xC-YBV"/>
+                        <segue destination="XuQ-H7-MLa" kind="push" identifier="showPoemListSegue" id="fIX-6v-eZz"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Em3-G8-CZa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="257"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="01" width="30" height="30"/>
+        <image name="02" width="30" height="30"/>
+        <image name="03" width="30" height="30"/>
+        <image name="04" width="30" height="30"/>
+        <image name="05" width="30" height="30"/>
+        <image name="Arrow Left.png" width="32" height="32"/>
+        <image name="Arrow Right.png" width="32" height="32"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="RLm-Ip-O7j"/>
+        <segue reference="AR8-7b-fpV"/>
+        <segue reference="jKb-OP-LP7"/>
+    </inferredMetricsTieBreakers>
+</document>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XYPoetViewController">
+            <connections>
+                <outlet property="btnFav" destination="cDJ-RT-RkQ" id="5bl-Le-ttJ"/>
+                <outlet property="btnSetting" destination="WbQ-uv-mpA" id="JqJ-YA-pIX"/>
+                <outlet property="btnShare" destination="HHS-s3-lsa" id="ttL-h2-Img"/>
+                <outlet property="tvContent" destination="pKF-6i-MG3" id="dFR-g7-X7s"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="pKF-6i-MG3">
+                    <rect key="frame" x="0.0" y="20" width="320" height="504"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <mutableString key="text">央广网北京6月6日消息 据中国之声《新闻纵横》报道，明天，2014年高考就要正式拉开大幕了。根据教育部统计，今年全国高考报名人数939万，是连续5年下降后的首次回升，当然，幅度很小，只比去年增长了27万，小涨3%。
+
+2008年我国高考报名人数达到历史峰值的1050万，从此之后，人数迅速下滑。根据中国教育在线刚刚发布的《2014年高招教育报告》，高考生源的下降，主要是适龄学生人口的持续下降，而这个趋势将一直延续到2020年。
+
+中国教育在线总编辑陈志文：整个生源的变化其实是和各地本身的人口出生率相关的，落户政策的影响是相对小的。举个最简单的例子，我们2000年的时候全国的出生率大概只出生了一千两百万人左右。在各地也有这种节奏，只是最低谷出现的时间不一样。
+
+这种减少，反映在各地是这样的：北京今年比去年减少2000人，连续第八年下降；上海更明显，2006年还11万人，今年只有5万2，缩减一半；高考大省河南，今年甩掉考生第一大省帽子，72.4万人，连续第五年下降。
+
+报的人少了，招的人也在减少，于是各地都开始调减招生计划。陈志文说，这几年，最严重的问题是——就算减了也招不满。
+
+陈志文：这个在以前是没有的。我们以前，各地为了多招两个学生，实际上或多或少是超额完成招生计划了。现在就变成完不成招生计划了。等于有条件上大学的这些学生都放弃上，这才是真正的危机。因为学生和家长放弃了上大学的机会。
+
+这种“招不满”的生源危机，反映到不同的学校，呈现不同的化学效果。影响小的，面临的只是一场生源危机，严重的恐怕要演变成生存危机了。这种危机正在倒逼高校，尤其是二本、三本院校的改革。中国教育科学研究院研究员储朝晖说：
+
+储朝晖：整体的，各个高校都要进行观念的转变。就是要从过去的高高在上，等着学生来上门，转为真正的以学生为本，以学生的需要作为办学的依据。然后根据这个依据来进行实际教学。对学校的管理，进行管理体制改革。把学校办成真正为学生成长发展服务，为学生实现自己的人生使命服务。只有实现了这一点，大学才能在未来的竞争中生存下来。
+
+教育部也在积极引导一批高校向应用技术型转型。目前，全国已经有150多所地方院校报名参加教育部的转型改革，淡化学科、强化专业，按照企业的需要，按照岗位对接。不过，中国教育在线总编辑陈志文也担心，这种改革会因社会和家长的顾虑而缺乏动力。
+
+陈志文：这些学校都是缺乏特色和不接地气。我觉得这个政策是高等教育领域出台的最好的一个政策。但是一些高校有没有动力？因为一但是被定为实际应用类，就会觉得他是本科的职业学校。就会有看法，也会导致很多学校不想，不敢走这条路。
+
+根据预测，2020年，我国18岁适龄人口将达到最低谷。这意味着，曾经千军万马过独木桥的壮烈场景将不复存在。面对成为大趋势的生源危机，未来6年，不知有多少高校能化“危机”为“转机”？当然也让人很想知道，6年后的高考，会变成什么样子。未来还充满不确定性。
+
+(原标题：高考生源下降趋势将延续至2020年 各地调减招生计划)</mutableString>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="X7E-TJ-lIJ">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Mka-pJ-z6A"/>
+                        <barButtonItem systemItem="bookmarks" id="cDJ-RT-RkQ"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="OGc-UK-Oc6"/>
+                        <barButtonItem systemItem="organize" id="WbQ-uv-mpA">
+                            <connections>
+                                <action selector="buttonAction:" destination="-1" id="X06-ks-ANp"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Goz-ZL-yD6"/>
+                        <barButtonItem systemItem="action" id="HHS-s3-lsa"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="D6t-BI-0Gg"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
